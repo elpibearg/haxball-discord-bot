@@ -2,14 +2,13 @@
   "name": "haxball-discord-bot",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node index.js"
   },
-  "dependencies": {
-    "discord.js": "^14.14.1"
-  }
-}
-{
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
     "discord.js": "^14.14.1",
     "express": "^4.18.2"
