@@ -75,3 +75,8 @@ client.on('interactionCreate', async (interaction) => {
 });
 
 client.login(TOKEN);
+// Mantener servicio activo
+const express = require('express');
+const keepAlive = express();
+keepAlive.get('/', (req, res) => res.send('Bot activo'));
+keepAlive.listen(3000, () => console.log('Keep-alive server running'));
